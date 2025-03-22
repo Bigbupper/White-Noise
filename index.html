@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise Mixer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop plays-inline class="bg-video">
+        <source src="media/rainy-day-in-japan-pixel-moewalls-com.mp4" type="video/mp4">
+    </video>
+    <div class="header">
+    <h1>Noise Mixer</h1>
+    <button id="pause-all">
+        <svg id="pause" fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M18.432 7.5h4.547v17h-4.547zM9.022 7.5h4.545v17H9.022z"></path></g></svg>
+    </button>
+    </div>
+    <div class="sliders">
+        <div class="control">
+            <img class="icon" src="media/rain.png" alt="rain drops">
+            <div class="slider-container">
+                <label for="rain">rain</label>
+                <input type="range" id="rain" min="0" max="100" step="5" value="0">
+            </div>
+        </div>
+        <div class="control">
+            <img class="icon" src="media/thunder.png" alt="thunder bolt">
+            <div class="slider-container">
+                <label for="thunder">thunder</label>
+                <input type="range" id="thunder" min="0" max="100" step="5" value="0">
+            </div>
+        </div>
+        <div class="control">
+            <img class="icon" src="media/wind.png" alt="wind">
+            <div class="slider-container">
+                <label for="wind">wind</label>
+                <input type="range" id="wind" min="0" max="100" step="5" value="0">
+            </div>
+        </div>
+        <div class="control">
+            <img class="icon" src="media/city.png" alt="city skyline">
+            <div class="slider-container">
+                <label for="city">city</label>
+                <input type="range" id="city" min="0" max="100" step="5" value="0">
+            </div>
+        </div>
+        <div class="control">
+            <img class="icon" src="media/static.png" alt="static">
+            <div class="slider-container">
+                <label for="static">static</label>
+                <input type="range" id="static" min="0" max="100" step="5" value="0">
+            </div>
+        </div>
+        <div class="control">
+            <img class="icon" src="media/fireplace.png" alt="fireplace">
+            <div class="slider-container">
+                <label for="fireplace">fireplace</label>
+                <input type="range" id="fireplace" min="0" max="100" step="5" value="0">
+            </div>
+        </div>
+        <div class="control">
+            <img class="icon" src="media/fan.png" alt="fan">
+            <div class="slider-container">
+                <label for="fan">fan</label>
+                <input type="range" id="fan" min="0" max="100" step="5" value="0">
+            </div>
+        </div>
+        <div class="control">
+            <img class="icon" src="media/space.png" alt="space">
+            <div class="slider-container">
+                <label for="space">space</label>
+                <input type="range" id="space" min="0" max="100" step="5" value="0">
+            </div>
+        </div>
+        <div class="control">
+            <img class="icon" src="media/gaming.png" alt="gaming">
+            <div class="slider-container">
+                <label for="gaming">gaming</label>
+                <input type="range" id="gaming" min="0" max="100" step="5" value="0">
+            </div>
+        </div>
+    </div>
+    <h3 class="quote">Sometimes our brains are too loud, ambient noise can help mask internal chatter.</h3>
+<script src="script.js"></script>
+</body>
+</html>
