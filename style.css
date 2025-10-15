@@ -19,6 +19,7 @@ body {
     overflow-y: hidden;
     min-height: 100vh;
     background-color: #223d34;
+    padding: 50px;
     
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -90,7 +91,7 @@ button {
     justify-content: space-between;
 }
 .icon {
-    height: 50px;
+    height: 60px;
 }
 label {
     margin-right: 10px;
@@ -121,11 +122,10 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* -------media query------- */
 @media screen and (max-width: 600px) {
-    body, .bg-video {
-        position: absolute;
-    }
-    .header {
-        margin: 5%;
+    body {
+        position: fixed;
+        overflow-x: scroll;
+        padding: 20px;
     }
     h1 {
         font-size: 2.5rem;
