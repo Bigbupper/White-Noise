@@ -10,13 +10,16 @@
     <video autoplay muted loop plays-inline class="bg-video">
         <source src="media/rainy-day-in-japan-pixel-moewalls-com.mp4" type="video/mp4">
     </video>
-    <div class="header">
-    <h1>Noise Mixer</h1>
-    <button id="pause-all">
-        <svg id="pause" fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M18.432 7.5h4.547v17h-4.547zM9.022 7.5h4.545v17H9.022z"></path></g></svg>
-    </button>
-    </div>
-    <div class="sliders">
+    <section class="header">
+        <h1>Noise Mixer</h1>
+        <div id="global-controls">
+            <button id="pause-all">
+                <svg id="pause" fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M18.432 7.5h4.547v17h-4.547zM9.022 7.5h4.545v17H9.022z"></path></g></svg>
+            </button>
+            <input type="range" id="global" min="0" max="100" step="5" value="0">
+        </div>
+    </section>
+    <section class="sliders">
         <div class="control">
             <img class="icon" src="media/rain.png" alt="rain drops">
             <div class="slider-container">
@@ -80,7 +83,7 @@
                 <input type="range" id="gaming" min="0" max="100" step="5" value="0">
             </div>
         </div>
-    </div>
+    </section>
     <h3 class="quote">Sometimes our brains are too loud, ambient noise can help mask internal chatter.</h3>
 <script src="script.js"></script>
 </body>
